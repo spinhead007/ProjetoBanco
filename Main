@@ -1,0 +1,16 @@
+package Main;
+
+import Controller.AprovaEmprestimo;
+
+public class Main {
+	public static void main(String[] args) {
+		double rendaAnual = 60000;
+		double valorEmprestimo = 100000;
+		
+		if (AprovaEmprestimo.aprovaEmprestimo(rendaAnual, valorEmprestimo)) {
+			System.out.println("Empréstimo Aprovado");
+		}else {
+			System.out.println("Empréstimo Negado");
+		}
+	}
+}
